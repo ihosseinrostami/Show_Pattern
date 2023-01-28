@@ -15,4 +15,49 @@ for i in range(r): #i is for row
         print (i , end = "") #the increase is work on row --> i
     print ("\n") #go to next line
 
+####################
+
+#Pyramid pattern of numbers
+#1 
+#1 2 
+#1 2 3 
+#1 2 3 4 
+#1 2 3 4 5
+
+for i in range(0 , r):
+    for j in range(1 , i+1):
+        print (j , end = "")
+    print ("\n")
+
+####################
+
+#Inverted pyramid pattern of numbers
+#1 1 1 1 1 
+#2 2 2 2 
+#3 3 3 
+#4 4 
+#5
+
+k = 0
+for i in range(r , 0 , -1): #-1 is for reverse loop
+    k = k + 1
+    for j in range(1 , i):
+        print (k , end = "")
+    print ("\n")
+
+####################
+
+#Inverted Pyramid pattern with the same digit
+#5 5 5 5 5 
+#5 5 5 5 
+#5 5 5 
+#5 5 
+#5
+
+for i in range(r, 0, -1):
+    for j in range(0, i):
+        print(r, end = "")
+    print("\n")
+    
+####################
 
